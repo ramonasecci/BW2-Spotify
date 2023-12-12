@@ -1,0 +1,56 @@
+body {
+    font-family: "Ciricular", sans-serif;
+}
+.maindiv {
+    background-color: #202020;
+}
+
+.h6card {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.nascondi {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 0.55em;
+    border-radius: 50px;
+    color: grey;
+    font-weight: bold;
+    background-color: #272727;
+    border: none;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+}
+.h2home {
+    font-size: 4em;
+    font-weight: bold;
+}
+.bplay {
+    background-color: #1ed760;
+    border: 0;
+    border-radius: 50px;
+    font-size: 0.8em;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.bsalva {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #5d5d5d;
+    border-radius: 20px;
+    font-size: 0.8em;
+    width: 90px;
+    height: 40px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.binfo {
+    background-color: transparent;
+    color: #5d5d5d;
+    border: 0;
+    border-radius: 50px;
+    width: 34px;
+}
