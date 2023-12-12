@@ -1,6 +1,3 @@
-body {
-    font-family: "Ciricular", sans-serif;
-}
 .maindiv {
     background-color: #202020;
 }
@@ -53,4 +50,126 @@ body {
     border: 0;
     border-radius: 50px;
     width: 34px;
+}
+/****************************************************************/
+body {
+    font-family: "Circular", sans-serif;
+    font-weight: bold;
+
+
+}
+.sidebar {
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 24px;
+}
+
+
+.sidebar .navigation ul {
+    list-style: none;
+
+}
+
+.sidebar .navigation ul li {
+    padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.sidebar .navigation ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 100;
+}
+
+.sidebar .navigation ul li a:hover {
+    color: #ffffff;
+}
+
+.sidebarAlbums {
+    color: #b3b3b3;
+    font-size: 12px;
+    overflow-y: scroll;
+    height: 785px;
+}
+
+.navigation {
+    margin-left: -30px;
+}
+
+.sidebar {
+    margin-top: -60px;
+}
+
+.sidebarAlbums::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+    }
+    .sidebarAlbums::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border: 1px solid #cacaca;
+    background-color: #f1f1f1;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    }
+    .sidebarAlbums::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, #a520ca), color-stop(1, #2681cc));
+    border-radius: 10px;
+    }
+
+
+#barra {
+    color: gray;
+}
+
+.sidebar2 {
+    padding-left: 7px;
+    padding-right: 10px;
+    color: #b3b3b3;;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.contenitore1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 15px;
+}
+.contenitore2 img {
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.contenitore2 {
+    font-size: 10px;
+    display: flex;
+    padding: 30px 0px;
+}
+
+.bi {
+    margin-right: 5px;
+}
+
+.music {
+    margin-top: -10px;
+}
+
+
+.bg-grandient{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(221,192,79,1) 100%);
 }
