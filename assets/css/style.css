@@ -203,6 +203,7 @@ footer{
 
 .riproduzione div{
     overflow: hidden;
+    width: 60%;
 }
 
 .riproduzione p {
