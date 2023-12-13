@@ -107,16 +107,20 @@
 /* roba mobile*/
 .prova {
     display: none !important;
+    width: 17% !important;
+    margin-left: 15px;
 }
 .musica{
-    margin-left: 15px;
-    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
     font-size: 0.9em;
     border-radius: 50px;
     color: white;
     background-color: #161616;
     border: none;
     padding: 8px 25px;
+    display: none !important;
 }
 @media (max-width: 767px) {
     .maindiv {
@@ -124,11 +128,10 @@
     }
 
     .buonasera {
-        margin-top: 5rem;
-        margin-bottom: 0.5rem;
+        margin-top: 5.3rem;
     }
     .buonasera h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .bi {
         margin-top: 5.8em;
@@ -137,10 +140,18 @@
     .nascondiAltro{
         display: none !important;
     }
-    
+    .musica{
+        display: block !important;
+    }
 }
 @media (max-width: 1199px) {
     .prova {
+        display: block !important;
+    }
+    .nascondiAltro{
+        display: none !important;
+    }
+    .musica{
         display: block !important;
     }
 }
