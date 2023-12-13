@@ -1,5 +1,5 @@
 .maindiv {
-    background-color: #202020;
+    background: linear-gradient(9deg, rgba(0, 0, 0, 1) 10%, #202020 75%);
     padding: 0em 2em !important;
 }
 
@@ -20,7 +20,7 @@
     letter-spacing: 1px;
     padding: 7px 20px;
 }
-.home{
+.home {
     margin-top: 5.5em;
 }
 .h2home {
@@ -63,6 +63,9 @@
 .card-body {
     max-width: calc(100% - 1rem);
 }
+.emily {
+    font-weight: bold;
+}
 @media screen and (min-width: 1455px) {
     .card-title {
         white-space: normal;
@@ -74,28 +77,38 @@
         max-width: 100%;
     }
 }
+.nascondi2 {
+    font-size: 0.6em;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: #121212;
+    border: none;
+    letter-spacing: 1px;
+    padding: 7px 20px;
+}
+.custom-card {
+        margin-right: 100px; /* Aggiungi il tuo margine a destra alle card */
+    }
 
-
+    .row.no-gutters {
+        margin-right: 0px; /* Rimuovi il margine di default aggiunto da Bootstrap */
+    }
 
 /****************************************************************/
 body {
     font-family: "Circular", sans-serif;
     font-weight: bold;
-
-
 }
 .sidebar {
-
     left: 0;
     top: 0;
     bottom: 0;
     padding: 24px;
 }
 
-
 .sidebar .navigation ul {
     list-style: none;
-
 }
 
 .sidebar .navigation ul li {
@@ -138,18 +151,23 @@ body {
 .sidebarAlbums::-webkit-scrollbar {
     width: 12px;
     border-radius: 10px;
-    }
-    .sidebarAlbums::-webkit-scrollbar-track {
+}
+.sidebarAlbums::-webkit-scrollbar-track {
     border-radius: 10px;
     border: 1px solid #cacaca;
     background-color: #f1f1f1;
     box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
-    }
-    .sidebarAlbums::-webkit-scrollbar-thumb {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, #a520ca), color-stop(1, #2681cc));
+}
+.sidebarAlbums::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.5, #a520ca),
+        color-stop(1, #2681cc)
+    );
     border-radius: 10px;
-    }
-
+}
 
 #barra {
     color: gray;
@@ -158,7 +176,7 @@ body {
 .sidebar2 {
     padding-left: 7px;
     padding-right: 10px;
-    color: #b3b3b3;;
+    color: #b3b3b3;
 }
 
 h2 {
@@ -189,14 +207,16 @@ h3 {
 
 .bi {
     margin-right: 5px;
-
 }
 
 .music {
     margin-top: -10px;
 }
 
-
-.bg-grandient{
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(221,192,79,1) 100%);
+.bg-grandient {
+    background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(221, 192, 79, 1) 100%
+    );
 }
