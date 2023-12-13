@@ -77,6 +77,25 @@
         max-width: 100%;
     }
 }
+.hideCard {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+
+@media (min-width: 1400px) {
+    .hideCard {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .hideCard2 {
+        visibility: hidden;
+        opacity: 1;
+    }
+}
 .nascondi2 {
     font-size: 0.6em;
     border-radius: 50px;
@@ -87,13 +106,6 @@
     letter-spacing: 1px;
     padding: 7px 20px;
 }
-.custom-card {
-        margin-right: 100px; /* Aggiungi il tuo margine a destra alle card */
-    }
-
-    .row.no-gutters {
-        margin-right: 0px; /* Rimuovi il margine di default aggiunto da Bootstrap */
-    }
 
 /****************************************************************/
 body {
