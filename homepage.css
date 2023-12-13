@@ -1,56 +1,63 @@
 .maindiv {
     background-color: #202020;
+    padding: 0em 2em !important;
 }
 
 .h6card {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: bold;
 }
 .nascondi {
     position: absolute;
-    right: 10px;
-    top: 20px;
-    font-size: 0.55em;
+    right: 30px;
+    top: 25px;
+    font-size: 0.7em;
     border-radius: 50px;
     color: grey;
     font-weight: bold;
     background-color: #272727;
     border: none;
     letter-spacing: 1px;
-    padding: 4px 12px;
+    padding: 7px 20px;
+}
+.home{
+    margin-top: 5.5em;
 }
 .h2home {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: bold;
 }
 .bplay {
     background-color: #1ed760;
     border: 0;
     border-radius: 50px;
-    font-size: 0.8em;
-    width: 80px;
-    height: 40px;
-    font-weight: bold;
+    width: 95px;
+    height: 45px;
+    font-weight: bolder;
     margin-right: 15px;
 }
 .bsalva {
     background-color: transparent;
     color: white;
     border: 1px solid #5d5d5d;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 0.8em;
-    width: 90px;
-    height: 40px;
+    width: 95px;
+    height: 50px;
     font-weight: bold;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 .binfo {
     background-color: transparent;
     color: #5d5d5d;
     border: 0;
     border-radius: 50px;
-    width: 34px;
+    width: 50px;
 }
+
+
+
+
 /****************************************************************/
 body {
     font-family: "Circular", sans-serif;
