@@ -395,27 +395,23 @@ footer {
     filter: invert(0.5) sepia(70) saturate(0) hue-rotate(0);
 }
 
-.songName,
 .footerPlayerLeftSongName {
-    font-weight: 100;
-    font-size: 15px;
     color: white;
+    margin-top: 20px !important;
 }
 
 .footerPlayerLeftSongName {
     width: 200px;
 }
-.footerPlayerLeftSongArtist {
-    text-align: center;
-}
+
 .songArtist,
 .songAlbum,
 .songDateAdded,
 tr td:first-of-type,
 .songDuration,
 .footerPlayerLeftSongArtist {
-    margin-top: 6px;
     color: #848485;
+    font-weight: bold;
 }
 
 .footerPlayer {
@@ -431,7 +427,8 @@ tr td:first-of-type,
 }
 
 .footerPlayerLeftLike {
-    margin-left: 5%;
+    margin-left: 40px;
+    margin-top: -25px;
 }
 .footerPlayerLeft {
     display: flex;
@@ -522,26 +519,11 @@ tr td:first-of-type,
     margin-right: 16px;
 }
 
-.pinko p {
-    animation: moveRightToLeft 5s linear infinite;
+.footerPlayerLeftSongName {
     overflow: hidden;
-    white-space: nowrap;
+    text-overflow: ellipsis;
     margin: 0;
 }
-
-@keyframes moveRightToLeft {
-    0% {
-        transform: translateX(-150%);
-    }
-    100% {
-        transform: translateX(110%);
-    }
-}
-
-.pinko div {
-    overflow: hidden;
-}
-
 footer {
     position: fixed;
     bottom: 0;
