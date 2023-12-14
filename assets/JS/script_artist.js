@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const trackId = urlParams.get("id");
     const libreriaAlbum = document.getElementById('libreriaAlbum');
     const eleTracksHit = document.querySelector('#tracksHit')
+    const eleTracksLove = document.querySelector('#tracksLove')
+    const eleTracksLoveMob = document.querySelector('#tracksLoveMob')
     let i = 1
     console.log(trackId)
     
@@ -20,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
      //data.tracks.data.forEach((data) => console.log(data))
 
         console.log(data.cover_big)
-     libreriaAlbum.innerHTML = `<div class="r-bg-img r-bg-size d-flex flex-column justify-content-md-between justify-content-end" style="background-image: url('${data.cover_big}'); " >
+     libreriaAlbum.innerHTML = `<div class="r-bg-img r-bg-size d-flex flex-column justify-content-md-between justify-content-end" style="background-image: url('${data.artist.picture_xl}'); " >
      
 
 
@@ -61,6 +63,40 @@ document.addEventListener("DOMContentLoaded", function () {
          </div>
      </div>
  </div>`;
+    
+    eleTracksLoveMob.innerHTML=`<div class="row fw-lighter align-items-center text-grid mb-4 d-md-none">
+    <div class="col-12 col-md-7 d-flex align-items-center">
+        <img src="${data.cover_small}" alt="" width="60" height="60" class="rounded-circle me-3">
+        <div>
+            <p class="text-white fw-lighter mb-0 fs-6">Brani che ti piacciono</p>
+            <p class="mb-0">8 brani di ${data.artist.name}</p>
+        </div>  
+    </div>
+    <div class="col-2 text-end ">
+    </div>
+    <div class="col-2 text-end">
+    </div>
+</div>`
+
+    eleTracksLove.innerHTML= `<div class="row fw-lighter align-items-center text-grid mb-3">
+    <div class="col-6 col-md-7 d-flex align-items-center">
+        <img src="${data.cover_small}" alt="" width="60" height="60" class="rounded-circle me-3">
+        <div>
+            <p class="text-white fw-medium mb-2 fs-6">Brano</p>
+            <p class="mb-0">${data.artist.name}</p>
+        </div>  
+    </div>
+    <div class="col-2 text-end ">
+    </div>
+    <div class="col-2 text-end">
+    </div>
+    <div class="col-1 d-md-none me-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-three-dots r-icon-color custom-svg-left d-md-none" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+        </svg>
+    </div>
+</div>`
+
     data.tracks.data.forEach((data) => {
         console.log(data.title)
         const cardHTML = `
@@ -68,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <div class="col-6 col-md-7 d-flex align-items-center">
                                     <p class=" mb-0">${i}</p>
                                     <div class="d-flex align-items-center " style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;" >
-                                        <img src="${data.cover_small}" alt="${data.title}" width="40" height="40" class="mx-3">
+                                        <img src="${data.album.cover_small}" alt="${data.title}" width="40" height="40" class="mx-3">
                                         <p class="text-white fw-medium mb-0 fs-6">${data.title}</p>
                                     </div>  
                                 </div>
@@ -92,7 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
             
         }
     }
-)
+)   
+
 });
 })
 

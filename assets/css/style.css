@@ -297,6 +297,10 @@ footer{
     font-size: 1rem;
 }
 
+body > footer.d-md-none > div.riproduzione > svg.bi.bi-speaker{
+    color: #F5F5F5;
+}
+
 /*Footer igor desktop*/
 
 #pauseButton {
