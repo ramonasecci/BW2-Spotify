@@ -20,9 +20,9 @@
         />
     </head>
     <body>
-        <div class="container-fluid ">
-            <div class="row ">
-                <div class="col-lg-2 d-none d-xl-block bg-black ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 d-none d-xl-block bg-black">
                     <div class="sidebar">
                         <div class="navigation">
                             <ul>
@@ -34,7 +34,7 @@
                                                 width="30"
                                                 height="30"
                                                 fill="currentColor"
-                                                class="bi bi-three-dots"
+                                                class="bi bi-three-dots mt-3"
                                                 viewBox="0 0 16 16"
                                             >
                                                 <path
@@ -308,7 +308,90 @@
                 </div>
 
                 <div class="col 7 maindiv">
-                    <!---------------primo contenitore---------------------------------------------------INIZIO CARD VIOLA----------------->
+                    <!---------------primo contenitore---------------------------------------------------Inizio bottoni----------------->
+                    <div class="justify-content-between mt-4 d-none d-md-flex">
+                        <div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                fill="none"
+                                width="35px"
+                                height="35px"
+                                style="margin-right: 15px; margin-left: 3px"
+                                viewBox="0 0 400 400"
+                            >
+                                <g>
+                                    <g>
+                                        <circle
+                                            cx="200"
+                                            cy="200"
+                                            r="200"
+                                            fill="black"
+                                        />
+                                        <path
+                                            d="M241.559,109.851c-5.123-5.124-13.43-5.124-18.547,0l-80.875,80.873c-2.46,2.459-3.843,5.796-3.843,9.273    c0,3.478,1.383,6.813,3.843,9.272l80.875,80.875c2.562,2.562,5.918,3.844,9.273,3.844c3.354,0,6.719-1.281,9.272-3.844    c5.123-5.119,5.123-13.426,0-18.545l-71.597-71.604l71.597-71.6C246.682,123.277,246.682,114.971,241.559,109.851z"
+                                            fill="#919191"
+                                        />
+                                    </g>
+                                </g>
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                fill="none"
+                                width="35px"
+                                style="transform: rotate(180deg)"
+                                height="35px"
+                                viewBox="0 0 400 400"
+                            >
+                                <g>
+                                    <g>
+                                        <circle
+                                            cx="200"
+                                            cy="200"
+                                            r="200"
+                                            fill="black"
+                                        />
+                                        <path
+                                            d="M241.559,109.851c-5.123-5.124-13.43-5.124-18.547,0l-80.875,80.873c-2.46,2.459-3.843,5.796-3.843,9.273    c0,3.478,1.383,6.813,3.843,9.272l80.875,80.875c2.562,2.562,5.918,3.844,9.273,3.844c3.354,0,6.719-1.281,9.272-3.844    c5.123-5.119,5.123-13.426,0-18.545l-71.597-71.604l71.597-71.6C246.682,123.277,246.682,114.971,241.559,109.851z"
+                                            fill="#919191"
+                                        />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div
+                            id="banner-artist"
+                            class="rounded-pill d-flex bg-black justify-content-center align-items-center p-1"
+                        >
+                            <img
+                                src="assets/imgs/main/image-12.jpg"
+                                alt="..."
+                                class="rounded-circle me-3"
+                                width="30"
+                                height="30"
+                            />
+                            <p class="text-white mb-0 fw-medium me-2 fw-bold">
+                                Lidia Nautilus ...
+                            </p>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="15"
+                                height="15"
+                                fill="currentColor"
+                                class="bi bi-caret-left-fill text-white me-2"
+                                viewBox="0 0 16 16"
+                                style="transform: rotate(-90deg)"
+                            >
+                                <path
+                                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <!--fine bottoni-->
+                    !<!------inizio card VIOLA-->
                     <div
                         class="card mb-4 text-light home d-none d-md-block"
                         style="
@@ -368,7 +451,7 @@
 
                     <section class="text-light mb-3">
                         <div class="d-flex justify-content-between">
-                            <div class="mb-2 buonasera">
+                            <div class="mb-0 buonasera">
                                 <h1>Buonasera</h1>
                             </div>
                             <div class="d-flex justify-content-between divIcon">
@@ -426,17 +509,6 @@
                                     />
                                 </svg>
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <h4 class="fw-bold nascondiAltro">
-                                Altro di ciò che ti piace
-                            </h4>
-                            <button
-                                type="button"
-                                class="nascondi2 nascondiAltro"
-                            >
-                                VISUALIZZA ALTRO
-                            </button>
                         </div>
                         <div class="d-flex">
                             <button type="button" class="musica">Musica</button>
@@ -913,7 +985,7 @@
                     <!-------FINE SECONDA CARD PLAYLIST-->
 
                     <section class="text-light">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between mt-5">
                             <h4 class="fw-bold nascondiAltro">
                                 Altro di ciò che ti piace
                             </h4>
@@ -1081,32 +1153,72 @@
                 <!-----------------BARRA DESTRA--------------->
                 <div class="col-md-3 col-lg-2 d-none d-xl-block bg-black">
                     <div class="sidebar2">
-                        <div class="contenitore1">
+                        <div class="d-flex justify-content-end mt-3">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="me-4"
+                                style="width: 20px; fill: white"
+                                viewBox="0 0 1024 1024"
+                            >
+                                <path
+                                    d="M960 544H64a32 32 0 1 1 0-64h896a32 32 0 1 1 0 64"
+                                />
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                                height="25"
+                                class="me-4"
+                            >
+                                <path
+                                    d="M16 6.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V7a.5.5 0 0 1 .5-.5zm-.5 1h-11v11h11v-11zm3.5-4a.5.5 0 0 1 .492.41L19.5 4v10a.5.5 0 0 1-.992.09L18.5 14V4.5H9a.5.5 0 0 1-.492-.41L8.5 4a.5.5 0 0 1 .41-.492L9 3.5h10z"
+                                    fill="white"
+                                />
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25px"
+                                height="25px"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M4.795 3.912l-.883.883.147.146L7.117 8 4.06 11.059l-.147.146.883.883.146-.147L8 8.883l3.059 3.058.146.147.883-.883-.147-.146L8.883 8l3.058-3.059.147-.146-.883-.883-.146.147L8 7.117 4.941 4.06z"
+                                    color="#000000"
+                                    font-weight="400"
+                                    font-family="sans-serif"
+                                    white-space="normal"
+                                    overflow="visible"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <div class="contenitore1 mt-4">
                             <div>
-                                <h2>Attività amici</h2>
+                                <h4 class="text-light">Attività amici</h4>
                             </div>
                             <div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="15"
+                                    width="25"
                                     height="25"
-                                    fill="currentColor"
-                                    class="bi bi-person-plus"
+                                    fill="white"
+                                    class="bi bi-person-plus me-3"
                                     viewBox="0 0 16 16"
                                 >
                                     <path
                                         d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"
                                     />
                                     <path
-                                        fill-rule="evenodd"
                                         d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"
                                     />
                                 </svg>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="15"
-                                    height="25"
-                                    fill="currentColor"
+                                    width="23"
+                                    height="23"
+                                    fill="white"
                                     class="bi bi-x-lg"
                                     viewBox="0 0 16 16"
                                 >
@@ -1122,19 +1234,20 @@
                                 <img
                                     src="/assets/imgs/search/image-22.jpg"
                                     alt="#"
-                                    width="30"
+                                    width="40"
+                                    class="me-3"
                                 />
                             </div>
                             <div>
-                                <h3>Charlie</h3>
-                                <p>In Camera · Yumi Zouma</p>
-                                <p>
+                                <h6>Charlie Hookman</h6>
+                                <p class="mb-2">In Camera · Yumi Zouma</p>
+                                <p class="m-0">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-disc"
+                                        class="bi bi-disc me-1"
                                         viewBox="0 0 16 16"
                                     >
                                         <path
@@ -1148,7 +1261,14 @@
                                 </p>
                             </div>
                             <div>
-                                <p>4 ore</p>
+                                <p
+                                    style="
+                                        margin-right: -100%;
+                                        margin-bottom: 0px;
+                                    "
+                                >
+                                    4 ore
+                                </p>
                             </div>
                         </div>
                         <div class="contenitore2">
@@ -1156,13 +1276,14 @@
                                 <img
                                     src="/assets/imgs/search/image-37.jpeg"
                                     alt="#"
-                                    width="30"
+                                    width="40"
+                                    class="me-3"
                                 />
                             </div>
                             <div>
-                                <h3>lightdark02</h3>
-                                <p>Aimed to Kill · Jade LeMac</p>
-                                <p class="music">
+                                <h6 class="between">lightdark02</h6>
+                                <p class="mb-1">Aimed to Kill · Jade LeMac</p>
+                                <p class="m-0">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
@@ -1181,8 +1302,16 @@
                                     Aimed to Kill
                                 </p>
                             </div>
-                            <div>
-                                <p>4 ore</p>
+
+                            <div class="justify-content-end">
+                                <p
+                                    style="
+                                        margin-right: -100%;
+                                        margin-bottom: 0px;
+                                    "
+                                >
+                                    4 ore
+                                </p>
                             </div>
                         </div>
                         <div class="contenitore2">
@@ -1190,11 +1319,12 @@
                                 <img
                                     src="/assets/imgs/search/image-32.jpg"
                                     alt="#"
-                                    width="30"
+                                    width="40"
+                                    class="me-3"
                                 />
                             </div>
                             <div>
-                                <h3>Valeria</h3>
+                                <h6>Valeria Traverso</h6>
                                 <p>New Kings · Sleeping Wolf</p>
                                 <p class="music">
                                     <svg
@@ -1220,7 +1350,14 @@
                                 </p>
                             </div>
                             <div>
-                                <p>4 ore</p>
+                                <p
+                                    style="
+                                        margin-right: -100%;
+                                        margin-bottom: 0px;
+                                    "
+                                >
+                                    4 ore
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1318,7 +1455,7 @@
 
         <!-- footer desktop igor-->
         <footer class="d-none d-xl-block">
-            <div class="footerPlayer row wewewe">
+            <div class="footerPlayer row margine">
                 <!------cont scritta animata----->
                 <div class="d-flex col-3 ps-3 py-2">
                     <div>
@@ -1372,6 +1509,7 @@
                                 <img
                                     src="assets/imgLogos/Play.svg"
                                     alt="play"
+                                    style=""
                                 />
                             </div>
                             <img
