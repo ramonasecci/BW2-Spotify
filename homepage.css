@@ -151,19 +151,15 @@
         display: block !important;
     }
 }
+svg, img, p {
+    cursor: pointer;
+}
 
 /****************************************************************/
 body {
     font-family: "Circular", sans-serif;
     font-weight: bold;
 }
-.gigi{
-    position: sticky !important;
-    height: 100vh;
-    width: 100vh;
-}
-
-
 .sidebar .navigation ul {
     list-style: none;
 }
