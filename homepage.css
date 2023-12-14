@@ -157,12 +157,12 @@ body {
     font-family: "Circular", sans-serif;
     font-weight: bold;
 }
-.sidebar {
-    left: 0;
-    top: 0;
-    bottom: 0;
-    padding: 24px;
+.gigi{
+    position: sticky !important;
+    height: 100vh;
+    width: 100vh;
 }
+
 
 .sidebar .navigation ul {
     list-style: none;
@@ -337,8 +337,8 @@ h3 {
         width: 15%;
     }
     .menuNavigazione div a {
-    font-size: 1.3em;
-}
+        font-size: 1.3em;
+    }
 }
 .libreria {
     transform: rotate(270deg);
@@ -499,12 +499,14 @@ tr td:first-of-type,
     padding: 0 10px;
     color: #cacaca;
 }
+.footerPlayerRight {
+    margin-right: -10px;
+}
 
 .footerPlayerRight input {
     width: 80px;
     position: relative;
     margin-right: 10px;
-    top: -3px;
 }
 
 .footerPlayerRightButtons {
@@ -514,9 +516,9 @@ tr td:first-of-type,
 }
 
 .footerPlayerRightButtons img {
-    width: 16px;
-    height: 16px;
-    margin-right: 16px;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
 }
 
 .footerPlayerLeftSongName {
