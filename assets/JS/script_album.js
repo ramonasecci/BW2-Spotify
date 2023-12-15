@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const artistId = urlParams.get('id');
-    const libreriaAlbum = document.getElementById('libreriaAlbum');
+    const albumId = urlParams.get('id');
+    //const libreriaAlbum = document.getElementById('libreriaAlbum');
+    console.log(albumId)
     
-    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${artistId}`, {
+    fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${albumId}/`, {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'df6ea74f78msh1312afd4ca059d2p13c34ejsn03bcf4451057',
@@ -12,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .then((response) => response.json())
     .then((data) => {
-        for (let i = 0; i < data.data.length; i++) {
+        console.log(data)
+
+        /*for (let i = 0; i < data.data.length; i++) {
             let content = data.data[i];
             const card = document.createElement("div");
             card.classList.add("searchResultBox");
@@ -25,6 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>`;
             
             libreriaAlbum.appendChild(card);
-        }
+        }*/
     });
 });

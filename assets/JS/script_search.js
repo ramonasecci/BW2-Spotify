@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>`;
 
 //artist.album.title album
-console.log(componitore.album.id)
 
             disposizioneBrani.innerHTML += cardHTML;
         });
@@ -69,4 +68,5 @@ console.log(componitore.album.id)
 function redirectToAlbumPage(trackId) {
     window.location.assign("pag_2_artist.html?id=" + trackId)
     console.log(trackId)
+    
 }

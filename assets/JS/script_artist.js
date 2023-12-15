@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     data.tracks.data.forEach((data) => {
         console.log(data.title)
         const cardHTML = `
-        <div class="row fw-lighter align-items-center text-grid mb-3 ">
+        <div class="row fw-lighter align-items-center text-grid mb-3 " onclick="redirectToAlbumPage(${trackId})">
                                 <div class="col-6 col-md-7 d-flex align-items-center">
                                     <p class=" mb-0">${i}</p>
                                     <div class="d-flex align-items-center " style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;" >
@@ -124,14 +124,16 @@ document.addEventListener("DOMContentLoaded", function () {
         `
         eleTracksHit.innerHTML += cardHTML
         i++
-        if(i > 7){
-            
-        }
     }
 )   
 
 });
 })
+
+function redirectToAlbumPage(trackId) {
+    window.location.assign("pag_3_album.html?id=" + trackId)
+    console.log(trackId)
+}
 
 
 /*document.addEventListener("DOMContentLoaded", function () {
