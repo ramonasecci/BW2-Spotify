@@ -13,6 +13,16 @@ body {
     padding: 24px;
 }
 
+.r-colGrey{
+    color:#B3B3B3;
+}
+
+.r-b-iSearch{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    color: #B3B3B3;
+}
 
 .sidebar .navigation ul {
     list-style: none;
