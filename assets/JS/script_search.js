@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const disposizioneBrani = document.querySelector("#searchContent");
-    const searchBar = document.querySelector("#inputSearchM");
+    const searchBar = document.querySelector("#searchI");
     //const searchButton = document.querySelector(".searchButton");
 
     searchBar.addEventListener("input", function (event) {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>`;
 
-//artist.album.title album
+
 
             disposizioneBrani.innerHTML += cardHTML;
         });
@@ -70,3 +70,8 @@ function redirectToAlbumPage(trackId) {
     console.log(trackId)
     
 }
+
+const mySvg2 = document.getElementById('homeClick');
+ mySvg2.addEventListener('click', function() {
+     window.location.href = 'pag_1_home.html'; 
+ });

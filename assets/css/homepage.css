@@ -56,6 +56,14 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+.r-b-iSearch{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    color: #B3B3B3;
+}
+
 .cardPlay {
     display: none !important;
 }
@@ -82,9 +90,7 @@
         visibility: visible;
         opacity: 1;
     }
-    .maindiv {
-        height: 137vh;
-    }
+    
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

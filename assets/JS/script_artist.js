@@ -130,9 +130,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 })
 
-function redirectToAlbumPage(trackId) {
-    window.location.assign("pag_3_album.html?id=" + trackId)
-    console.log(trackId)
+function redirectToAlbumPage(trackIdAlbum) {
+    window.location.assign("pag_3_album.html?id=" + trackIdAlbum)
+    console.log(trackIdAlbum)
 }
 
 
