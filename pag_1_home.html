@@ -1,308 +1,1582 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/circular-font.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="assets/css/circular-font.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="assets/css/homepage.css" />
 
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 d-none d-lg-block bg-black">
-                <div class="sidebar">
-                    <div class="navigation">
-                        <ul>
-                            <li>
-                                <a href="">
-                                    <span class="fa"><li>
-                                        <a href="">
-                                            <span class="fa"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
-                                              </svg></span>
-                                            
+        <title>Spotify-Homepage</title>
+        <link
+            rel="shortcut icon"
+            href="assets/imgs/png-clipart-spotify-logo-spotify-computer-icons-podcast-music-apps-miscellaneous-angle-1-e1614848134495.png"
+            type="image/png"
+        />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 d-none d-xl-block bg-black pe-1">
+                    <div class="sidebar">
+                        <div class="navigation">
+                            <ul>
+                                <li>
+                                    <span class="fa">
+                                        <a href="#">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="30"
+                                                height="30"
+                                                fill="currentColor"
+                                                class="bi bi-three-dots mt-3"
+                                                viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                                />
+                                            </svg>
                                         </a>
-                                    </li></span>
-                                    
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
-                                      </svg></span>
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                      </svg></span>
-                                    <span>Cerca</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
-                                        <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"/>
-                                      </svg></span>
-                                    <span>La tua libreria</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-            
-                    <div class="navigation">
-                        <ul>
-                            <li>
-                                <a href="">
-                                    <span class="fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
-                                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
-                                      </svg></span>
-                                    <span>Crea playlist</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="fa"> <img src="/assets/imgLogos/icona1.jpeg" width="25" height="25" alt=""></span>
-                                    <span>Brani che ti piacciono</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="fa"> <img src="/assets/imgLogos/icona2.png" width="25" height="25" alt=""></span>
-                                    <span>I tuoi episodi</span>
-                                </a>
-                            </li>
-            
-                        </ul>
-                    </div>
-                    <hr id="barra">
-                    <div class="sidebarAlbums">
-                            <p>early stage emily syndrome (sett-ott 2022)</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="pag_1_home.html">
+                                        <span class="fa"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="25"
+                                                height="25"
+                                                fill="currentColor"
+                                                class="bi bi-house-door-fill"
+                                                viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="pag_search_mobile.html">
+                                        <span class="fa"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="25"
+                                                height="25"
+                                                fill="currentColor"
+                                                class="bi bi-search"
+                                                viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span>Cerca</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="25"
+                                                height="25"
+                                                fill="currentColor"
+                                                class="bi bi-collection"
+                                                viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span>La tua libreria</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="navigation">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa"
+                                            ><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="25"
+                                                height="25"
+                                                fill="currentColor"
+                                                class="bi bi-plus-square-fill"
+                                                viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span>Crea playlist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa">
+                                            <img
+                                                src="/assets/imgLogos/icona1.jpeg"
+                                                width="25"
+                                                height="25"
+                                                alt="cuore"
+                                        /></span>
+                                        <span>Brani che ti piacciono</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa">
+                                            <img
+                                                src="/assets/imgLogos/icona2.png"
+                                                width="25"
+                                                height="25"
+                                                alt="segna"
+                                        /></span>
+                                        <span>I tuoi episodi</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr id="barra" />
+                        <div class="sidebarAlbums">
+                            <p class="mt-3">
+                                early stage emily syndrome (sett-ott 2022)
+                            </p>
                             <p>Be The Young</p>
                             <p>"..." cit. Kimiko (lug-ago 2022)</p>
-                            <p>saggio vibes <img width="20" height="20" src="https://img.icons8.com/emoji/48/dancing-girl.png" alt="dancing-girl"/><img width="20" height="20" src="https://img.icons8.com/emoji/48/ballet-shoes-emoji.png" alt="ballet-shoes-emoji"/>
-
+                            <p>
+                                saggio vibes
+                                <img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/dancing-girl.png"
+                                    alt="dancing-girl"
+                                /><img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/ballet-shoes-emoji.png"
+                                    alt="ballet-shoes-emoji"
+                                />
                             </p>
                             <p>main character energy (mag-giu 2022)</p>
-                            <p>that fucking mood<img width="20" height="20" src="https://img.icons8.com/emoji/48/kitchen-knife-emoji.png" alt="kitchen-knife-emoji"/><img width="20" height="20" src="https://img.icons8.com/emoji/48/skull-and-crossbones.png" alt="skull-and-crossbones"/></p>
+                            <p>
+                                that fucking mood<img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/kitchen-knife-emoji.png"
+                                    alt="kitchen-knife-emoji"
+                                /><img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/skull-and-crossbones.png"
+                                    alt="skull-and-crossbones"
+                                />
+                            </p>
                             <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
-                            <p>An Emily Winchester king of mood<img width="20" height="20" src="https://img.icons8.com/emoji/48/kitchen-knife-emoji.png" alt="kitchen-knife-emoji"/>
-                                <img width="20" height="20" src="https://img.icons8.com/emoji/48/middle-finger-emoji.png" alt="middle-finger-emoji"/></p>
+                            <p>
+                                An Emily Winchester king of mood<img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/kitchen-knife-emoji.png"
+                                    alt="kitchen-knife-emoji"
+                                />
+                                <img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/middle-finger-emoji.png"
+                                    alt="middle-finger-emoji"
+                                />
+                            </p>
                             <p>landing page (mar-apr 2022)</p>
                             <p>2021 lol</p>
-                            <p>cosa cazzo vuol dire questa affermazione (gen-fe...)</p>
-                            <p>Gli sfondi di Abel<img width="20" height="20" src="https://img.icons8.com/emoji/48/rolling-on-the-floor-laughing.png" alt="rolling-on-the-floor-laughing"/><img width="20" height="20" src="https://img.icons8.com/emoji/48/rolling-on-the-floor-laughing.png" alt="rolling-on-the-floor-laughing"/></p>
+                            <p>
+                                cosa cazzo vuol dire questa affermazione
+                                (gen-fe...)
+                            </p>
+                            <p>
+                                Gli sfondi di Abel<img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/rolling-on-the-floor-laughing.png"
+                                    alt="rolling-on-the-floor-laughing"
+                                /><img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/rolling-on-the-floor-laughing.png"
+                                    alt="rolling-on-the-floor-laughing"
+                                />
+                            </p>
                             <p>(Revenge) Training Arc</p>
                             <p>Lidia Emily</p>
-                            <p>Tutto in discesa<img width="20" height="20" src="https://img.icons8.com/emoji/48/skier-emoji.png" alt="skier-emoji"/></p>
-                            <p>silvano d'orba? I hardly know her (lug - ago 2021)</p>
+                            <p>
+                                Tutto in discesa<img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/skier-emoji.png"
+                                    alt="skier-emoji"
+                                />
+                            </p>
+                            <p>
+                                silvano d'orba? I hardly know her (lug - ago
+                                2021)
+                            </p>
                             <p>Culo 2021</p>
-                            <p>I bimbi di Ramona<img width="20" height="20" src="https://img.icons8.com/emoji/48/baby-light-skin-tone.png" alt="baby-light-skin-tone"/><img width="20" height="20" src="https://img.icons8.com/emoji/48/baby-light-skin-tone.png" alt="baby-light-skin-tone"/><img width="20" height="20" src="https://img.icons8.com/emoji/48/baby-light-skin-tone.png" alt="baby-light-skin-tone"/><img width="20" height="20" src="https://img.icons8.com/emoji/48/baby-light-skin-tone.png" alt="baby-light-skin-tone"/></p>
+                            <p>
+                                I bimbi di Ramona<img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/baby-light-skin-tone.png"
+                                    alt="baby-light-skin-tone"
+                                /><img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/baby-light-skin-tone.png"
+                                    alt="baby-light-skin-tone"
+                                /><img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/baby-light-skin-tone.png"
+                                    alt="baby-light-skin-tone"
+                                /><img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/baby-light-skin-tone.png"
+                                    alt="baby-light-skin-tone"
+                                />
+                            </p>
                             <p>Francesco Guccini Mix</p>
-                            <p>early stage emily syndrome (sett-ott 2022)<img width="20" height="20" src="https://img.icons8.com/emoji/48/kiss-mark.png" alt="kiss-mark"/></p>
+                            <p>
+                                early stage emily syndrome (sett-ott 2022)<img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/kiss-mark.png"
+                                    alt="kiss-mark"
+                                />
+                            </p>
                             <p>Be The Young</p>
                             <p>"..." cit. Kimiko (lug-ago 2022)</p>
                             <p>saggio vibes</p>
                             <p>main character energy (mag-giu 2022)</p>
-                            <p>that fucking mood<img width="20" height="20" src="https://img.icons8.com/emoji/48/basketball-emoji.png" alt="basketball-emoji"/></p>
+                            <p>
+                                that fucking mood<img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/basketball-emoji.png"
+                                    alt="basketball-emoji"
+                                />
+                            </p>
                             <p>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
                             <p>An Emily Winchester king of mood</p>
                             <p>landing page (mar-apr 2022)</p>
                             <p>2021 lol</p>
-                            <p>cosa cazzo vuol dire questa affermazione (gen-fe...)</p>
+                            <p>
+                                cosa cazzo vuol dire questa affermazione
+                                (gen-fe...)
+                            </p>
                             <p>honey and glass(nov-dic 2021)</p>
                             <p>(Revenge) Training Arc</p>
                             <p>Lidia Emily</p>
-                            <p>minecraft e nientendo switch (sep-oct 2021)<img width="20" height="20" src="https://img.icons8.com/emoji/48/collision.png" alt="collision"/>
-
+                            <p>
+                                minecraft e nientendo switch (sep-oct 2021)<img
+                                    width="20"
+                                    height="20"
+                                    src="https://img.icons8.com/emoji/48/collision.png"
+                                    alt="collision"
+                                />
                             </p>
-                            <p>silvano d'orba? I hardly know her (lug - ago 2021)</p>
+                            <p>
+                                silvano d'orba? I hardly know her (lug - ago
+                                2021)
+                            </p>
                             <p>Culo 2021</p>
                             <p>Frah Quintale Mix</p>
                             <p>Francesco Guccini Mix</p>
-                            
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col 7 maindiv pb-5">
+                    <!---------------primo contenitore---------------------------------------------------Inizio bottoni----------------->
+                    <div class="justify-content-between mt-4 d-none d-md-flex">
+                        <div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                fill="none"
+                                width="35px"
+                                height="35px"
+                                style="margin-right: 15px; margin-left: 3px"
+                                viewBox="0 0 400 400"
+                            >
+                                <g>
+                                    <g>
+                                        <circle
+                                            cx="200"
+                                            cy="200"
+                                            r="200"
+                                            fill="black"
+                                        />
+                                        <path
+                                            d="M241.559,109.851c-5.123-5.124-13.43-5.124-18.547,0l-80.875,80.873c-2.46,2.459-3.843,5.796-3.843,9.273    c0,3.478,1.383,6.813,3.843,9.272l80.875,80.875c2.562,2.562,5.918,3.844,9.273,3.844c3.354,0,6.719-1.281,9.272-3.844    c5.123-5.119,5.123-13.426,0-18.545l-71.597-71.604l71.597-71.6C246.682,123.277,246.682,114.971,241.559,109.851z"
+                                            fill="#919191"
+                                        />
+                                    </g>
+                                </g>
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                fill="none"
+                                width="35px"
+                                style="transform: rotate(180deg)"
+                                height="35px"
+                                viewBox="0 0 400 400"
+                            >
+                                <g>
+                                    <g>
+                                        <circle
+                                            cx="200"
+                                            cy="200"
+                                            r="200"
+                                            fill="black"
+                                        />
+                                        <path
+                                            d="M241.559,109.851c-5.123-5.124-13.43-5.124-18.547,0l-80.875,80.873c-2.46,2.459-3.843,5.796-3.843,9.273    c0,3.478,1.383,6.813,3.843,9.272l80.875,80.875c2.562,2.562,5.918,3.844,9.273,3.844c3.354,0,6.719-1.281,9.272-3.844    c5.123-5.119,5.123-13.426,0-18.545l-71.597-71.604l71.597-71.6C246.682,123.277,246.682,114.971,241.559,109.851z"
+                                            fill="#919191"
+                                        />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div
+                            id="banner-artist"
+                            class="rounded-pill d-flex bg-black justify-content-center align-items-center p-1"
+                        >
+                            <img
+                                src="assets/imgs/main/image-12.jpg"
+                                alt="..."
+                                class="rounded-circle me-3"
+                                width="30"
+                                height="30"
+                            />
+                            <p class="text-white mb-0 fw-medium me-2 fw-bold">
+                                Lidia Nautilus ...
+                            </p>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="15"
+                                height="15"
+                                fill="currentColor"
+                                class="bi bi-caret-left-fill text-white me-2"
+                                viewBox="0 0 16 16"
+                                style="transform: rotate(-90deg)"
+                            >
+                                <path
+                                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <!--fine bottoni-->
+                    !<!------inizio card VIOLA-->
+                    <div
+                        class="card mb-4 text-light home d-none d-md-block"
+                        style="
+                            background: linear-gradient(
+                                9deg,
+                                rgba(0, 0, 0, 1) 10%,
+                                #202020 75%
+                            );
+                            border: 0;
+                            max-width: 100%;
+                            max-height: 100%;
+                        "
+                    >
+                        <div class="row no-gutters">
+                            <div class="col-md-6 col-lg-5 col-xl-5 col-xxl-3">
+                                <img
+                                    src="assets/imgs/main/image-1.jpg"
+                                    class="card-img ms-2 my-3 p-3"
+                                    alt="viola"
+                                />
+                            </div>
+                            <div class="col-md-6 col-lg-7">
+                                <div class="card-body ps-0 mt-2">
+                                    <h6 class="h6card mb-3">ALBUM</h6>
+                                    <button type="button" class="nascondi">
+                                        NASCONDI ANNUNCI
+                                    </button>
+                                    <h2 class="card-title mb-1 h2home">
+                                        VIOLA (feat. Salmo)
+                                    </h2>
+                                    <p class="card-text mb-3">Fedez, Salmo</p>
+                                    <p class="card-text">
+                                        Ascolta il nuovo singolo di Fedez e
+                                        Salmo!
+                                    </p>
+                                    <div class="d-inline">
+                                        <button class="bplay my-0">Play</button>
+                                        <button class="bsalva">Salva</button>
+                                        <button class="binfo">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="currentColor"
+                                                class="bi bi-three-dots"
+                                                viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------------------------------------------------Fine card "VIOLA"--------------------------------------------->
+
+                    <section class="text-light mb-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="mb-0 buonasera">
+                                <h1>Buonasera</h1>
+                            </div>
+                            <div class="d-flex justify-content-between divIcon">
+                                <!---icona notifica-->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    fill="currentColor"
+                                    class="bi bi-bell me-2 prova"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+                                    />
+                                    <circle
+                                        cx="4"
+                                        cy="3"
+                                        r="3"
+                                        fill="#4c8acf"
+                                        stroke="black"
+                                        stroke-width="1.5"
+                                    />
+                                </svg>
+                                <!---icona orologio-->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    fill="currentColor"
+                                    class="bi bi-clock me-2 prova"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"
+                                    />
+                                    <path
+                                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"
+                                    />
+                                </svg>
+                                <!---icona impostazioni-->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    fill="currentColor"
+                                    class="bi bi-gear prova"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"
+                                    />
+                                    <path
+                                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="musica">Musica</button>
+                            <button type="button" class="musica">
+                                Podcast e show
+                            </button>
+                        </div>
+                        <!----bottoni mobile musica e podcast---->
+                        <div class="container">
+                            <div class="row">
+                                <!--prima card BUONASERA-->
+                                <div
+                                    class="col-6 col-xl-4 ps-0 mt-sm-1 mt-md-3"
+                                >
+                                    <div
+                                        class="card"
+                                        style="
+                                            background-color: #2c2c2c;
+                                            color: white;
+                                        "
+                                    >
+                                        <div class="row m-0">
+                                            <div class="col-4 ps-0">
+                                                <img
+                                                    src="assets/imgs/search/image-1.jpeg"
+                                                    class="card-img"
+                                                    alt="Immagine"
+                                                />
+                                            </div>
+                                            <div
+                                                class="col-8 d-flex align-items-center px-0"
+                                            >
+                                                <div
+                                                    class="card-body emily ps-0"
+                                                >
+                                                    <p class="card-title">
+                                                        early stage emily
+                                                        syndrome (sett-ott 2022)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--seconda card-->
+                                <div
+                                    class="col-6 col-xl-4 ps-0 mt-sm-1 mt-md-3"
+                                >
+                                    <div
+                                        class="card"
+                                        style="
+                                            background-color: #2c2c2c;
+                                            color: white;
+                                        "
+                                    >
+                                        <div class="row m-0">
+                                            <div class="col-4 ps-0">
+                                                <img
+                                                    src="assets/imgs/search/image-1.jpeg"
+                                                    class="card-img"
+                                                    alt="Immagine"
+                                                />
+                                            </div>
+                                            <div
+                                                class="col-8 d-flex align-items-center px-0"
+                                            >
+                                                <div class="card-body ps-0">
+                                                    <p class="card-title emily">
+                                                        early stage emily
+                                                        syndrome (sett-ott 2022)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------terza card-->
+                                <div
+                                    class="col-6 col-xl-4 ps-0 mt-sm-1 mt-md-3"
+                                >
+                                    <div
+                                        class="card"
+                                        style="
+                                            background-color: #2c2c2c;
+                                            color: white;
+                                        "
+                                    >
+                                        <div class="row m-0">
+                                            <div class="col-4 ps-0">
+                                                <img
+                                                    src="assets/imgs/search/image-1.jpeg"
+                                                    class="card-img"
+                                                    alt="Immagine"
+                                                />
+                                            </div>
+                                            <div
+                                                class="col-8 d-flex align-items-center px-0"
+                                            >
+                                                <div class="card-body ps-0">
+                                                    <p class="card-title emily">
+                                                        early stage emily
+                                                        syndrome (sett-ott 2022)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------quarta card-->
+                                <div
+                                    class="col-6 col-xl-4 ps-0 mt-sm-1 mt-md-3"
+                                >
+                                    <div
+                                        class="card"
+                                        style="
+                                            background-color: #2c2c2c;
+                                            color: white;
+                                        "
+                                    >
+                                        <div class="row m-0">
+                                            <div class="col-4 ps-0">
+                                                <img
+                                                    src="assets/imgs/search/image-1.jpeg"
+                                                    class="card-img"
+                                                    alt="Immagine"
+                                                />
+                                            </div>
+                                            <div
+                                                class="col-8 d-flex align-items-center px-0"
+                                            >
+                                                <div class="card-body ps-0">
+                                                    <p class="card-title emily">
+                                                        early stage emily
+                                                        syndrome (sett-ott 2022)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-----------------quinta card--------->
+                                <div
+                                    class="col-6 col-xl-4 ps-0 mt-sm-1 mt-md-3"
+                                >
+                                    <div
+                                        class="card"
+                                        style="
+                                            background-color: #2c2c2c;
+                                            color: white;
+                                        "
+                                    >
+                                        <div class="row m-0">
+                                            <div class="col-4 ps-0">
+                                                <img
+                                                    src="assets/imgs/search/image-1.jpeg"
+                                                    class="card-img"
+                                                    alt="Immagine"
+                                                />
+                                            </div>
+                                            <div
+                                                class="col-8 d-flex align-items-center px-0"
+                                            >
+                                                <div class="card-body ps-0">
+                                                    <p class="card-title emily">
+                                                        early stage emily
+                                                        syndrome (sett-ott 2022)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-----------------sesta card--------->
+                                <div
+                                    class="col-6 col-xl-4 ps-0 mt-sm-1 mt-md-3"
+                                >
+                                    <div
+                                        class="card"
+                                        style="
+                                            background-color: #2c2c2c;
+                                            color: white;
+                                        "
+                                    >
+                                        <div class="row m-0">
+                                            <div class="col-4 ps-0">
+                                                <img
+                                                    src="assets/imgs/search/image-1.jpeg"
+                                                    class="card-img"
+                                                    alt="Immagine"
+                                                />
+                                            </div>
+                                            <div
+                                                class="col-8 d-flex align-items-center px-0"
+                                            >
+                                                <div class="card-body ps-0">
+                                                    <p class="card-title emily">
+                                                        early stage emily
+                                                        syndrome (sett-ott 2022)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-----card playlist mobile------>
+                    <section class="cardPlay">
+                        <div
+                            class="card text-light mb-3 rounded rounded-4"
+                            style="background-color: #242424"
+                        >
+                            <div class="row">
+                                <div class="col-6 p-0">
+                                    <div>
+                                        <img
+                                            src="assets/imgs/main/image-1.jpg"
+                                            class="card-img my-4 w-75"
+                                            alt="viola"
+                                            style="
+                                                box-shadow: 0px 0px 10px
+                                                    rgba(214, 214, 214, 0.349);
+                                                position: relative;
+                                                margin-left: 13% !important;
+                                            "
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-6 mb-5 p-0"
+                                    style="margin-left: -10px"
+                                >
+                                    <div class="card-body ps-0 mt-2">
+                                        <h6 class="mb-2 text-secondary">
+                                            Playlist
+                                        </h6>
+                                        <h4 class="card- mb-1">
+                                            study and work space
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between pb-3 ms-4 mx-lg-5 mt-2"
+                            >
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="#1fd662"
+                                        class="bi bi-heart-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        class="bi bi-three-dots-vertical ms-5"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-secondary mb-0 mt-1 me-4">
+                                        16 brani
+                                    </p>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="35"
+                                        height="35"
+                                        class="bi bi-play-circle-fill me-3"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill="#1b1b1b"
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"
+                                        />
+                                        <path
+                                            fill="white"
+                                            d="M5.5 4.5L11.5 8l-6 3.5z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!------SECONDA CARD PLAYLIST-->
+                        <div
+                            class="card text-light mb-3 rounded rounded-4"
+                            style="background-color: #242424"
+                        >
+                            <div class="row">
+                                <div class="col-6 p-0">
+                                    <div>
+                                        <img
+                                            src="assets/imgs/main/image-1.jpg"
+                                            class="card-img my-4 w-75"
+                                            alt="viola"
+                                            style="
+                                                box-shadow: 0px 0px 10px
+                                                    rgba(214, 214, 214, 0.349);
+                                                position: relative;
+                                                margin-left: 13% !important;
+                                            "
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-6 mb-5 p-0"
+                                    style="margin-left: -10px"
+                                >
+                                    <div class="card-body ps-0 mt-2">
+                                        <h6 class="mb-2 text-secondary">
+                                            Playlist
+                                        </h6>
+                                        <h4 class="card- mb-1">
+                                            study and work space
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between pb-3 ms-4 mx-lg-5 mt-2"
+                            >
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="#1fd662"
+                                        class="bi bi-heart-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        class="bi bi-three-dots-vertical ms-5"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-secondary mb-0 mt-1 me-4">
+                                        16 brani
+                                    </p>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="35"
+                                        height="35"
+                                        class="bi bi-play-circle-fill me-3"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill="#1b1b1b"
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"
+                                        />
+                                        <path
+                                            fill="white"
+                                            d="M5.5 4.5L11.5 8l-6 3.5z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="card text-light mb-3 rounded rounded-4"
+                            style="background-color: #242424"
+                        >
+                            <div class="row">
+                                <div class="col-6 p-0">
+                                    <div>
+                                        <img
+                                            src="assets/imgs/main/image-1.jpg"
+                                            class="card-img my-4 w-75"
+                                            alt="viola"
+                                            style="
+                                                box-shadow: 0px 0px 10px
+                                                    rgba(214, 214, 214, 0.349);
+                                                position: relative;
+                                                margin-left: 13% !important;
+                                            "
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-6 mb-5 p-0"
+                                    style="margin-left: -10px"
+                                >
+                                    <div class="card-body ps-0 mt-2">
+                                        <h6 class="mb-2 text-secondary">
+                                            Playlist
+                                        </h6>
+                                        <h4 class="card- mb-1">
+                                            study and work space
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between pb-3 ms-4 mx-lg-5 mt-2"
+                            >
+                                <div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="#1fd662"
+                                        class="bi bi-heart-fill"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="30"
+                                        height="30"
+                                        fill="currentColor"
+                                        class="bi bi-three-dots-vertical ms-5"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="text-secondary mb-0 mt-1 me-4">
+                                        16 brani
+                                    </p>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="35"
+                                        height="35"
+                                        class="bi bi-play-circle-fill me-3"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            fill="#1b1b1b"
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"
+                                        />
+                                        <path
+                                            fill="white"
+                                            d="M5.5 4.5L11.5 8l-6 3.5z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-------FINE SECONDA CARD PLAYLIST-->
+
+                    <section class="text-light">
+                        <div class="d-flex justify-content-between mt-5">
+                            <h4 class="fw-bold nascondiAltro">
+                                Altro di ciò che ti piace
+                            </h4>
+                            <button
+                                type="button"
+                                class="nascondi2 nascondiAltro"
+                            >
+                                VISUALIZZA TUTTO
+                            </button>
+                        </div>
+                        <div class="container nascondiAltro">
+                            <div class="row justify-content-between">
+                                <!---prima card ALTRO DI CIò--->
+                                <div
+                                    class="card col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-3 g-3"
+                                    style="background-color: #171717"
+                                >
+                                    <img
+                                        src="assets/imgs/search/image-10.jpg"
+                                        class="card-img-top"
+                                        alt="asd"
+                                        style="
+                                            box-shadow: 0px 5px 30px
+                                                rgba(0, 0, 0, 2);
+                                            position: relative;
+                                            width: 100%;
+                                            height: 70%;
+                                        "
+                                    />
+                                    <div
+                                        class="card-body text-light px-0"
+                                        style="background-color: #171717"
+                                    >
+                                        <h6 class="card-title fw-bold">
+                                            Hot Hits Italia
+                                        </h6>
+                                        <p class="card-text text-secondary">
+                                            La playlist più calda di tua sorella
+                                        </p>
+                                    </div>
+                                </div>
+                                <!---seconda card ALTRO DI CIò--->
+                                <div
+                                    class="card col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-3 g-3"
+                                    style="background-color: #171717"
+                                >
+                                    <img
+                                        src="assets/imgs/search/image-10.jpg"
+                                        class="card-img-top"
+                                        alt="asd"
+                                        style="
+                                            box-shadow: 0px 5px 30px
+                                                rgba(0, 0, 0, 2);
+                                            position: relative;
+                                            width: 100%;
+                                            height: 70%;
+                                        "
+                                    />
+                                    <div
+                                        class="card-body text-light px-0"
+                                        style="background-color: #171717"
+                                    >
+                                        <h6 class="card-title fw-bold">
+                                            Hot Hits Italia
+                                        </h6>
+                                        <p class="card-text text-secondary">
+                                            La playlist più calda di tua sorella
+                                        </p>
+                                    </div>
+                                </div>
+                                <!---terza card ALTRO DI CIò--->
+                                <div
+                                    class="card col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-3 g-3"
+                                    style="background-color: #171717"
+                                >
+                                    <img
+                                        src="assets/imgs/search/image-10.jpg"
+                                        class="card-img-top"
+                                        alt="asd"
+                                        style="
+                                            box-shadow: 0px 5px 30px
+                                                rgba(0, 0, 0, 2);
+                                            position: relative;
+                                            width: 100%;
+                                            height: 70%;
+                                        "
+                                    />
+                                    <div
+                                        class="card-body text-light px-0"
+                                        style="background-color: #171717"
+                                    >
+                                        <h6 class="card-title fw-bold">
+                                            Hot Hits Italia
+                                        </h6>
+                                        <p class="card-text text-secondary">
+                                            La playlist più calda di tua sorella
+                                        </p>
+                                    </div>
+                                </div>
+                                <!---quarta card ALTRO DI CIò--->
+                                <div
+                                    class="card col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-3 g-3 hideCard2"
+                                    style="background-color: #171717"
+                                >
+                                    <img
+                                        src="assets/imgs/search/image-10.jpg"
+                                        class="card-img-top"
+                                        alt="asd"
+                                        style="
+                                            box-shadow: 0px 5px 30px
+                                                rgba(0, 0, 0, 2);
+                                            position: relative;
+                                            width: 100%;
+                                            height: 70%;
+                                        "
+                                    />
+                                    <div
+                                        class="card-body text-light px-0"
+                                        style="background-color: #171717"
+                                    >
+                                        <h6 class="card-title fw-bold">
+                                            Hot Hits Italia
+                                        </h6>
+                                        <p class="card-text text-secondary">
+                                            La playlist più calda di tua sorella
+                                        </p>
+                                    </div>
+                                </div>
+                                <!---quinta card ALTRO DI CIò--->
+                                <div
+                                    class="card col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-3 g-3 hideCard"
+                                    style="background-color: #171717"
+                                >
+                                    <img
+                                        src="assets/imgs/search/image-10.jpg"
+                                        class="card-img-top"
+                                        alt="asd"
+                                        style="
+                                            box-shadow: 0px 5px 30px
+                                                rgba(0, 0, 0, 2);
+                                            position: relative;
+                                            width: 100%;
+                                            height: 70%;
+                                        "
+                                    />
+                                    <div
+                                        class="card-body text-light px-0"
+                                        style="background-color: #171717"
+                                    >
+                                        <h6 class="card-title fw-bold">
+                                            Hot Hits Italia
+                                        </h6>
+                                        <p class="card-text text-secondary">
+                                            La playlist più calda di tua sorella
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------seconda riga desk------>
+                            </div>
+                        </div>
+
+                        <!-------fine cards------>
+                    </section>
+                </div>
+                <!-----------------BARRA DESTRA--------------->
+                <div class="col-md-3 col-lg-2 d-none d-xl-block bg-black">
+                    <div class="sidebar2">
+                        <div class="d-flex justify-content-end mt-3">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="me-4"
+                                style="width: 20px; fill: white"
+                                viewBox="0 0 1024 1024"
+                            >
+                                <path
+                                    d="M960 544H64a32 32 0 1 1 0-64h896a32 32 0 1 1 0 64"
+                                />
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                                height="25"
+                                class="me-4"
+                            >
+                                <path
+                                    d="M16 6.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V7a.5.5 0 0 1 .5-.5zm-.5 1h-11v11h11v-11zm3.5-4a.5.5 0 0 1 .492.41L19.5 4v10a.5.5 0 0 1-.992.09L18.5 14V4.5H9a.5.5 0 0 1-.492-.41L8.5 4a.5.5 0 0 1 .41-.492L9 3.5h10z"
+                                    fill="white"
+                                />
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25px"
+                                height="25px"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M4.795 3.912l-.883.883.147.146L7.117 8 4.06 11.059l-.147.146.883.883.146-.147L8 8.883l3.059 3.058.146.147.883-.883-.147-.146L8.883 8l3.058-3.059.147-.146-.883-.883-.146.147L8 7.117 4.941 4.06z"
+                                    color="#000000"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <div class="contenitore1 mt-4">
+                            <div>
+                                <h4 class="text-light">Attività amici</h4>
+                            </div>
+                            <div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="25"
+                                    height="25"
+                                    fill="white"
+                                    class="bi bi-person-plus me-3"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"
+                                    />
+                                    <path
+                                        d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="23"
+                                    height="23"
+                                    fill="white"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="contenitore2">
+                            <div>
+                                <img
+                                    src="/assets/imgs/search/image-22.jpg"
+                                    alt="#"
+                                    width="40"
+                                    class="me-3"
+                                />
+                            </div>
+                            <div>
+                                <h6>Charlie Hookman</h6>
+                                <p class="mb-2">In Camera · Yumi Zouma</p>
+                                <p class="m-0">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-disc me-1"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                                        />
+                                        <path
+                                            d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                                        />
+                                    </svg>
+                                    EP III
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    style="
+                                        margin-right: -100%;
+                                        margin-bottom: 0px;
+                                    "
+                                >
+                                    4 ore
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contenitore2">
+                            <div>
+                                <img
+                                    src="/assets/imgs/search/image-37.jpeg"
+                                    alt="#"
+                                    width="40"
+                                    class="me-3"
+                                />
+                            </div>
+                            <div>
+                                <h6 class="between">lightdark02</h6>
+                                <p class="mb-1">Aimed to Kill · Jade LeMac</p>
+                                <p class="m-0">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-disc"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                                        />
+                                        <path
+                                            d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                                        />
+                                    </svg>
+                                    Aimed to Kill
+                                </p>
+                            </div>
+
+                            <div class="justify-content-end">
+                                <p
+                                    style="
+                                        margin-right: -100%;
+                                        margin-bottom: 0px;
+                                    "
+                                >
+                                    4 ore
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contenitore2">
+                            <div>
+                                <img
+                                    src="/assets/imgs/search/image-32.jpg"
+                                    alt="#"
+                                    width="40"
+                                    class="me-3"
+                                />
+                            </div>
+                            <div>
+                                <h6>Valeria Traverso</h6>
+                                <p>New Kings · Sleeping Wolf</p>
+                                <p class="music">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-music-note-beamed"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M14 11V2h1v9zM6 3v10H5V3z"
+                                        />
+                                        <path
+                                            d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"
+                                        />
+                                    </svg>
+                                    Twint Badass mood
+                                </p>
+                            </div>
+                            <div>
+                                <p
+                                    style="
+                                        margin-right: -100%;
+                                        margin-bottom: 0px;
+                                    "
+                                >
+                                    4 ore
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class=" col-12 col-lg-7 bg-grandient">
-                <div class="justify-content-between my-2 d-none d-md-flex">
+        </div>
+
+        <!-- footer mobile marco-->
+        <footer class="d-xl-none">
+            <div class="riproduzione">
+                <div>
+                    <p class="r-color-footer r-f-size fw-bold">
+                        Il Vitello Dai Piedi Di Balsa
+                    </p>
+                </div>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    class="bi bi-speaker"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                        d="M8 4.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5M8 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-3.5 1.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+                    />
+                </svg>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-heart r-color-footer"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                    />
+                </svg>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi bi-play-fill play r-color-footer"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                    />
+                </svg>
+            </div>
+            <div class="menuNavigazione">
+                <div>
+                    <i class="bi bi-house-door"></i>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-house-door r-color-footer"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                        />
+                    </svg>
+                    <a href="#">Home</a>
+                </div>
+
+                <div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-search r-color-footer"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                        />
+                    </svg>
+                    <a href="#">Cerca</a>
+                </div>
+
+                <div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        class="bi bi-collection libreria r-color-footer"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"
+                        />
+                    </svg>
+                    <a href="#">La tua libreria</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer desktop igor-->
+        <footer class="d-none d-xl-block">
+            <div class="footerPlayer row margine">
+                <!------cont scritta animata----->
+                <div class="d-flex col-3 ps-3 py-2">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                        </svg>
+                        <img
+                            src="/assets/imgs/main/image-1.jpg"
+                            alt="#"
+                            style="width: 75px; margin-right: 15px"
+                        />
                     </div>
-                    <div id="banner-artist" class="rounded-pill d-flex bg-black justify-content-center align-items-center">
-                        <img src="assets/imgs/main/image-12.jpg" alt="..." class="rounded-circle me-1 " width="20" height="20">
-                        <p class="text-white  mb-0 fw-medium me-2">Artista...</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-caret-left-fill text-white me-2" viewBox="0 0 16 16">
-                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                        </svg>
-                    </div>    
-                </div>
-                <div id="titleMain" class="d-flex flex-column flex-md-row my-4">   
-                    <div class="me-2 row">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down custom-svg-left text-white d-md-none col-2" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
-                        </svg>
-                        <div class="col-8 col-md-12">
-                            <img src="assets/imgs/main/image-7.jpg" alt="..." class="img-alb-size">
-                        </div>
-                        <div class="col-2 d-md-none"></div>
-                    </div>
-                    <div class="me-5 d-flex flex-column justify-content-md-end">
-                        <p class="text-white fw-medium mb-0 d-none d-md-inline-block">ALBUM</p>
-                        <h1 class="text-white fw-medium  my-md-1">Gioventù brucata</h1>
-                        <div  id="dscAlbum" class="d-flex align-items-center">
-                            <img src="assets/imgs/main/image-12.jpg" alt="..." class="rounded-circle me-1 " width="15" height="15">
-                            <p class="text-white  mb-0 fw-medium">Pinguini Tattici Nucleari <span class="text-secondary d-none d-md-inline">• 2017 • 12brani</span> <span class="text-secondary d-none d-md-inline">53 min 20 sec</span></p>
-                                   
-                        </div>
-                    </div>
-                    <p class="text-secondary d-md-none ">Album • 2017</p> 
+                    <div class="footerPlayerLeft">
+                        <div class="footerPlayerLeftSong">
+                            <div>
+                                <div>
+                                    <h6 class="footerPlayerLeftSongName m-0">
+                                        Bottiglie Privè
+                                    </h6>
+                                </div>
+                            </div>
 
-                  
+                            <p class="d-inline">
+                                <small class="footerPlayerLeftSongArtist"
+                                    >Sfera Ebbasta</small
+                                >
+                            </p>
 
-
-                </div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="col-2 d-none d-lg-block bg-black">
-                <div class="sidebar2">
-                    <div class="contenitore1">
-                        <div>
-                            <h2>Attività amici</h2>
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
-                                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
-                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div class="contenitore2">
-                        <div>
-                            <img src="/assets/imgs/search/image-22.jpg"alt="#" width="30em">
-                        </div>
-                        <div>   
-                            <h3>Charlie</h3>
-                            <p>In Camera · Yumi Zouma</p>
-                            <p class="music"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-disc" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"/>
-                              </svg>EP III</p>
-                        </div>
-                        <div>
-                            <p>4 ore</p>
-                        </div>
-                    </div>
-                    <div class="contenitore2">
-                        <div>
-                            <img src="/assets/imgs/search/image-37.jpeg"alt="#" width="30em">
-                        </div>
-                        <div>   
-                            <h3>lightdark02</h3>
-                            <p>Aimed to Kill · Jade LeMac</p>
-                            <p class="music"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-disc" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                                <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"/>
-                              </svg>Aimed to Kill</p>
-                        </div>
-                        <div>
-                            <p>4 ore</p>
-                        </div>
-                    </div>
-                    <div class="contenitore2">
-                        <div>
-                            <img src="/assets/imgs/search/image-32.jpg"alt="#" width="30em">
-                        </div>
-                        <div>   
-                            <h3>Valeria</h3>
-                            <p>New Kings · Sleeping Wolf</p>
-                            <p class="music"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
-                                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/>
-                                <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
-                                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
-                              </svg>Twint Badass mood</p>
-                        </div>
-                        <div>
-                            <p>4 ore</p>
+                            <img
+                                src="assets/imgLogos/FiiledLike.svg"
+                                alt=""
+                                id="cuore"
+                                class="footerPlayerLeftLike"
+                            />
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footerPlayer">
-            <div>
-                <img src="/assets/imgs/main/image-1.jpg" alt="" width="100px">
-            </div>
-            <div class="footerPlayerLeft">
-                <div class="footerPlayerLeftSong">
-                    <div class="pinko">
-                        <div class="footerPlayerLeftSongName"><p>Bottiglie Privè Bottiglie Privè</p></div>
-                    </div>  
-                    <div class="footerPlayerLeftSongArtist">Ufo361</div>
+                <!------ fine cont artista----->
+                <!------ player----->
+                <div class="col-6">
+                    <div class="footerPlayerMiddle">
+                        <div class="footerPlayerMiddleButtons">
+                            <img
+                                src="assets/imgLogos/Shuffle.svg"
+                                alt="Shuffle"
+                                class="grayFiltered"
+                            />
+                            <img
+                                src="assets/imgLogos/Previous.svg"
+                                alt="Previous"
+                                class="grayFiltered"
+                            />
+                            <div class="" id="pauseButton">
+                                <img
+                                    src="assets/imgLogos/Play.svg"
+                                    alt="play"
+                                    style=""
+                                />
+                            </div>
+                            <img
+                                src="assets/imgLogos/Next.svg"
+                                alt="Next"
+                                class="grayFiltered"
+                            />
+                            <img
+                                src="assets/imgLogos/Repeat.svg"
+                                alt="Repeat"
+                                class="grayFiltered"
+                            />
+                        </div>
+                        <div class="footerPlayerMiddleSlider">
+                            <div class="playerTime" id="currentTime">0:00</div>
+                            <div class="playerSlider">
+                                <input
+                                    type="range"
+                                    id="playerSlider"
+                                    min="1"
+                                    max="100"
+                                    value="1"
+                                />
+                            </div>
+                            <div class="playerTime" id="totalTime">1:00</div>
+                        </div>
+                    </div>
                 </div>
+                <!------fine player----->
 
-                <div class="footerPlayerLeftLike">
-                    <img src="assets/imgLogos/FiiledLike.svg" alt="">
+                <div class="col-3 pe-0">
+                    <div class="footerPlayerRight">
+                        <div
+                            class="footerPlayerRightButtons justify-content-end"
+                        >
+                            <img src="assets/imgLogos/Lyrics.svg" alt="Mic" />
+                            <img src="assets/imgLogos/Queue.svg" alt="Queue" />
+                            <img
+                                src="assets/imgLogos/ConnectToaDevice.svg"
+                                alt="connect"
+                            />
+                            <img
+                                src="assets/imgLogos/Volume.svg"
+                                alt="Volume"
+                            />
+                            <div class="playerSlider">
+                                <input
+                                    type="range"
+                                    min="1"
+                                    max="100"
+                                    value="30"
+                                />
+                            </div>
+                            <img
+                                src="assets/imgLogos/Fullscreen.svg"
+                                alt="full"
+                                class="m-0"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footerPlayerMiddle">
-                <div class="footerPlayerMiddleButtons">
-                    <img src="assets/imgLogos/Shuffle.svg" alt="" class="grayFiltered">
-                    <img src="assets/imgLogos/Previous.svg" alt="" class="grayFiltered">
-                    <div class="" id="pauseButton">
-                        <img src="assets/imgLogos/Play.svg" alt="">
-                    </div>
-                    <img src="assets/imgLogos/Next.svg" alt="" class="grayFiltered">
-                    <img src="assets/imgLogos/Repeat.svg" alt="" class="grayFiltered">
-                </div>
-                <div class="footerPlayerMiddleSlider">
-                    <div class="playerTime" id="currentTime">0:00</div>
-                    <div class="playerSlider">
-                        <input type="range" id="playerSlider" min="1" max="100" value="1">
-                    </div>
-                    <div class="playerTime" id="totalTime">1:00</div>
-                </div>
-            </div>
-            <div class="footerPlayerRight">
-                <div class="footerPlayerRightButtons">
-                    <img src="assets/imgLogos/Lyrics.svg" alt="">
-                    <img src="assets/imgLogos/Queue.svg" alt="">
-                    <img src="assets/imgLogos/Connect to a device.svg" alt="">
-                    <img src="assets/imgLogos/Volume.svg" alt="">
-                    <div class="playerSlider">
-                        <input type="range" min="1" max="100" value="30">
-                    </div>
-                    <img src="assets/imgLogos/Full screen.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-
-    <script src="assets/JS/player_desktop.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
-
